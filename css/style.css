@@ -1,0 +1,257 @@
+header {
+  background-image: url('../images/MoldWallpapers_16x9_002.png');
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position:relative;
+  margin:0;
+  padding:0;
+  background-attachment: fixed;
+  flex-direction: column;
+  height: auto;
+  min-height: 40vh;  
+  padding-bottom: 8vh;
+}
+
+@keyframes growTitle {
+  0% {
+    transform:scale(1);
+  }
+  50% {
+    transform:scale(1.1);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #c2c3cb;
+  }
+  50% {
+    color: rgb(122, 77, 65);
+  }
+  100% {
+    color: #c2c3cb;
+  }
+}
+
+h1 {
+  font-family: 'Teko';
+  color: #c2c3cb;
+  font-size: 130px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  animation: growTitle 10s infinite, colorChange 4s infinite;
+}
+iframe
+{
+  display:block;
+  padding-bottom:60px;
+  margin: 0 auto;
+}
+a
+{
+  text-decoration: none;
+  color:#3E443B;
+}
+a:hover
+{
+  color:rgb(122, 77, 65);
+}
+table, th, td
+{
+  font-family:'Oxanium', sans-serif;
+  border: 1px solid;
+  padding:20px;
+  margin:0 auto;
+  background-color: black;
+  color: #b4b4b4;
+}
+table{
+  margin-bottom:40px;
+}
+
+h2{
+    font-family:'Teko';
+    color: #c2c3cb ;
+    font-size: 70px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:30px;
+    padding-top:30px;
+    padding-bottom:20px;
+    background-image: url('../images/MoldWallpapers_16x9_003.png');
+    background-attachment: fixed;
+    background-position: center;
+
+  }
+p {
+    font-family: 'Oxanium', sans-serif;
+    color:#191818 ;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 40px;
+  }
+ul
+{
+  font-family: 'Oxanium', sans-serif;
+  color:#191818 ;
+  font-size: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 40px;
+  display:flex;
+  flex-direction: column;
+}
+body {
+  background:#88898a;
+  color: #191818;
+  font-size:30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+
+nav {
+  top: 0;
+  bottom:0;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Teko';
+  flex-direction: row;
+}
+ul{
+  list-style-type: none;
+  color: #191818;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+nav ul li a {
+  display: inline-block;
+  font-family: 'Teko';
+  font-size: 30px;
+  color: #c2c3cb;
+  font-size: clamp(16px, 2.5vw, 30px);
+}
+
+nav ul li a:hover {
+  color: rgb(122, 77, 65);
+}
+
+main {
+  display:grid;
+  padding-top: 8vh;
+}
+
+
+
+footer {
+  height:100px;
+  padding-bottom:0;
+  bottom:0;
+  background-image: url('../images/MoldWallpapers_16x9_001.png');
+  background-position: center;
+  background-attachment: fixed;
+  padding-top:80px;
+  text-align: right;
+  font-family: 'Teko';
+  color:#b4b4b4;
+  bottom:0;
+  padding-right:200px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #151515;
+  border: 2px solid #c2c3cb;
+  border-radius: 8px;
+  min-width: 180px;
+  padding: 12px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #c2c3cb;
+  text-decoration: none;
+  font-family: 'Teko';
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content ul li a:hover {
+  background-color: rgb(122, 77, 65);
+  color: #1e1f1b;
+  padding-left: 25px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  header { min-height: 30vh; padding: 1.25rem; }
+  h1 { font-size: clamp(28px, 10vw, 80px); }
+  nav ul { gap: .5rem; }
+}
+
+@media (max-width: 480px) {
+  nav ul { flex-direction: column; align-items: center; }
+  nav ul li a { width: 100%; text-align: center; padding: .6rem 0; }
+  body { font-size: 16px; }
+  header { padding: 1rem .5rem; }
+}

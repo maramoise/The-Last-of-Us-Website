@@ -1,0 +1,187 @@
+header {
+  background-image:url('../images/ciuperci.jpg');
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position:relative;                                
+  margin:0;
+  padding:0;
+  background-attachment: fixed;
+  flex-direction: column;
+  height: auto;
+  min-height: 40vh;  
+  padding-bottom: 10vh;
+  box-shadow: 0 5px 20px black;
+}
+
+h1 {
+  color: #F8D794;
+  font-size: 130px;
+  text-align: center;
+  font-family: 'Teko';
+  padding: 0;
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #BB6830;
+  color: #F8D794;
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  accent-color: #BB6830;
+  transform: scale(1.2); 
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+a
+{
+  text-decoration: none;
+  color:#F8D794;
+  font-family: 'Teko';
+}
+
+body {
+  background:#223230;
+  color: #F8D794;
+  font-size:30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0;
+  padding:30px;
+  font-family: 'Oxanium', sans-serif;
+}
+
+#canvas-container {
+   width: 100%;
+   text-align:center;
+}
+
+canvas {
+   display: inline;
+   align-items: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 40%;
+  height: 10px;
+  border-radius: 5px;  
+  background: #111A19;
+  outline: none;
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 15px;
+  border-radius: 15%; 
+  background: #BB6830;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #BB6830;
+  cursor: pointer;
+}
+
+fieldset{
+
+  border: 2px solid #BB6830;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  background: #192422;
+
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="number"], 
+input[type="tel"], 
+textarea {
+  background: #F8D794;
+  border: none;
+  color: #22322d;
+  font-size: 19px;
+}
+
+.rezultat {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #192420;
+  border: 2px solid #BB6830;
+  text-align: center;
+  padding: 20px;
+}
+
+.ellie {
+  color: #7086b1;
+}
+
+.joel {
+  color: #8b4513;
+}
+
+.dina {
+  color: #a85f5f;
+}
+
+.tess {
+  color: #7c6d97;
+}
+
+.abby {
+  color: #6f9276;
+}
+
+#da {
+  text-align:center;
+  color:#bb8958;
+  font-size: 20px;
+}
+
+.istoric-container {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 2px dashed #BB6830;
+  padding-top: 20px;
+}
+
+#listaIstoric {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+#listaIstoric li {
+  background: #192420;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 4px solid #BB6830;
+  color: #F8D794;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
